@@ -9,7 +9,7 @@ const getWeather = require(path.join(__dirname,"utils/get_weather.js"));
 //node provides that
 // console.log(__dirname);//directiry the current script lives in
 // console.log(__filename);//path to the current file
-
+//chuj
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname,"../public");
 // const viewsPath = path.join(__dirname,"../templates/views");
