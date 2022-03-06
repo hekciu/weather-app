@@ -18,7 +18,7 @@ const viewsPath = path.join(__dirname,"../templates/views");
 
 //getting express object
 const app = express();
-
+const port = process.env.PORT || 3000;
 
 
 //it defines what app should do when someone enters the specific URL
@@ -134,7 +134,7 @@ app.get("*",function(req,res)
 {
     renderError(res,"page didn't find");
 })
-app.listen(3000,function()
+app.listen(port,function()
 {
-    console.log("Server is up at port 3000");
+    console.log("Server is up at port" + port);
 })
