@@ -7,7 +7,6 @@ const weatherSection = document.querySelector(".weather-section");
 
 const displayData = function(data)
 {
-    console.log(data);
     const html = `<p>Current Weather</p>
     <img src="${data.weather_icons[0]}"><br/>
     ${data.weather_descriptions[0]}<br/>
