@@ -7,9 +7,12 @@ const weatherSection = document.querySelector(".weather-section");
 
 const displayData = function(data)
 {
+    console.log(data);
     const html = `<p>Current Weather</p>
-    ${data.weather_descriptions[0]}<br>
-    Temperature: ${data.temperature}`
+    <img src="${data.weather_icons[0]}"><br/>
+    ${data.weather_descriptions[0]}<br/>
+    Temperature: ${data.temperature}<br/>
+    Pressure: ${data.pressure}`
     weatherSection.innerHTML = "";
     weatherSection.insertAdjacentHTML(`afterbegin`,html);
 }
